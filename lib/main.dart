@@ -3,15 +3,23 @@ import 'package:flutter/material.dart';
 
 
  
-void main() {
+void main() async {
   
   runApp(MyApp());
 
 Firestore firestore = Firestore.instance;
 
- firestore.collection('message').document('WxcVOCZ29K3udjzjb837').collection('arquivos').document().setData({
-  'arqname': 'foto.png'
+
+//  QuerySnapshot snapshot = await Firestore.instance.collection('message').getDocuments();
+//   snapshot.documents.forEach((d) {
+//     d.reference.updateData({'lido': false});
+//    });
+
+firestore.collection('message').snapshots().listen((dado) {
+  dado.documents.forEach((d) { print(d.data);
+   });
  });
+   
 } 
  
 class MyApp extends StatelessWidget {
