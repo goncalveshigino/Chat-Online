@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "536815872740",
+    "project_id": "chatonline-e7293",
+    "storage_bucket": "chatonline-e7293.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536815872740:android:3ae4bb101e39c7a27a9af1",
+        "android_client_info": {
+          "package_name": "com.example.chatoline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536815872740-le9257fkefsfgrhg6lqu0ucgp8fmbq7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ1zVZ4s2181uEd9MsLvxk518Ra0xXKdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536815872740-le9257fkefsfgrhg6lqu0ucgp8fmbq7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
