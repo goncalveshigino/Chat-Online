@@ -1,13 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/home/home.dart';
+
  
 void main() {
   
   runApp(MyApp());
 
-  Firestore.instance.collection("col").document('doc').setData({"texto": "gonza"});
+Firestore firestore = Firestore.instance;
+
+ firestore.collection('message').document('WxcVOCZ29K3udjzjb837').collection('arquivos').document().setData({
+  'arqname': 'foto.png'
+ });
 } 
  
 class MyApp extends StatelessWidget {
